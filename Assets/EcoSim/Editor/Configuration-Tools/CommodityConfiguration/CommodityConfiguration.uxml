@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EcoSim/Editor/Configuration-Tools/CommodityConfiguration/CommodityConfiguration.uss?fileID=7433441132597879392&amp;guid=4e0cbef8309f33e46af023128216bc8d&amp;type=3#CommodityConfiguration" />
+    <ui:DropdownField label="Simulation" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="simulationSelectionDropDown" />
+    <ui:VisualElement focusable="false" style="flex-grow: 1;">
+        <ui:DropdownField label="Commodity" index="0" name="commoditiesDropDown" tooltip="Select the commodity to edit" style="-unity-font-style: bold; font-size: 13px;" />
+        <ui:Label tabindex="-1" text="New Commodity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="newCommodityLabel" style="-unity-font-style: bold;" />
+        <ui:TextField picking-mode="Ignore" label="Name" value="Enter a name..." name="newCommodityNameTextField" tooltip="A unique name for the new commodity" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:IntegerField label="Initial Price" value="0" name="newCommodityPriceIntField" tooltip="The price of the commodity in the first round of trading" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:DoubleField label="Initial Supply" value="0" name="newCommoditySupplyDoubleField" tooltip="Available units for sale during the first round of trading" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:DoubleField label="Initial Demand" value="0" name="newCommodityDemandDoubleField" tooltip="Number of units wanted to be purchased during the first round of trading" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:DoubleField label="Needs Level" value="0" name="newCommodityNeedsDoubleField" tooltip="Baseline quantity that will be in demand each trading round" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:SliderInt picking-mode="Ignore" label="Average Price History" value="50" high-value="1000" name="newCommodityRollingAvgIntSlider" tooltip="The number of trading rounds the average price is remembered for" low-value="1" show-input-field="true" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:DoubleField label="Inflation rate" value="0" name="newCommodityInflationRateDoubleField" tooltip="The rate of change of the price of this commodity as time goes on. Larger values increase the rate of change (negative values cause a decrease in value)" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:Button text="Add new commodity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="addNewCommodityButton" />
+        <ui:Button text="Delete commodity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="deleteCommodityButton" />
+        <ui:Label tabindex="-1" text="Commodities" parse-escape-sequences="true" display-tooltip-when-elided="true" name="commodityScrollViewLabel" tooltip="The current list of commodities that exist" style="-unity-font-style: bold; position: relative; top: auto;" />
+        <ui:ScrollView name="commoditiesScrollView" style="overflow: visible; top: auto;" />
+        <ui:Button text="Save commodities" parse-escape-sequences="true" display-tooltip-when-elided="true" name="saveCommoditiesButton" />
+    </ui:VisualElement>
+</ui:UXML>

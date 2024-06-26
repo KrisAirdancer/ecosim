@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Commodity_A",
+    "price": 100,
+    "inflationRate": 5,
+    "supply": 10000,
+    "demand": 1000,
+    "needLevel": 100,
+    "movingAvgDuration": 50
+  },
+  {
+    "name": "Commodity_B",
+    "price": 100,
+    "inflationRate": 5,
+    "supply": 1000,
+    "demand": 10000,
+    "needLevel": 2000,
+    "movingAvgDuration": 50
+  },
+  {
+    "name": "Commodity_C",
+    "price": 100,
+    "inflationRate": 5,
+    "supply": 500,
+    "demand": 1000,
+    "needLevel": 10,
+    "movingAvgDuration": 50
+  }
+]

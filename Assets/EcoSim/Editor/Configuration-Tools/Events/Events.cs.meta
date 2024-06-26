@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/EcoSim/Editor/Configuration-Tools/Events/Events.cs.meta
+guid: 1ec64c6082eae724281f71d5d33673d6
+========
+guid: 8c6f62e5294e6014abad621c052b6dd1
+>>>>>>>> 6b254afe822e182e6b2219eaa48c396c61591e34:Assets/EcoSim/Runtime/Simulation/Commodity.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: e532a9bc87913e94980d0d058daca945, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

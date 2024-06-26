@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Bread",
+        "price": 12,
+        "supply": 1000,
+        "demand": 950,
+        "needLevel": 900,
+        "movingAvgDuration": 50,
+        "inflationRate": 10
+
+    },
+    {
+        "name": "Sword",
+        "price": 147,
+        "supply": 600,
+        "demand": 800,
+        "needLevel": 550,
+        "movingAvgDuration": 50,
+        "inflationRate": -10
+    }
+]

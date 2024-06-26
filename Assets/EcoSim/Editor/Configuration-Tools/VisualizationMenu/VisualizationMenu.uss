@@ -1,0 +1,33 @@
+#main {
+    display: flex;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.headerLabel {
+    white-space: normal;
+}
+
+#rowGroup {
+    flex: 1 0;
+}
+
+#body {
+    flex: 1 0;
+}
+
+.rowElement {
+}
+
+.rowLabel {
+    -unity-text-align: lower-left;
+}
+
+.selected {
+     /* background-color: red; */
+}

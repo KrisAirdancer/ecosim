@@ -1,0 +1,10 @@
+[
+  {
+    "commodity": "Commodity_A",
+    "inflationShift": 0,
+    "supplyShift": 0,
+    "demandShift": 100,
+    "needShift": 0,
+    "movingAvgDurationShift": 0
+  }
+]

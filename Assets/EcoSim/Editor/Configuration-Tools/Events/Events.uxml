@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EcoSim/Editor/Configuration-Tools/Events/Events.uss?fileID=7433441132597879392&amp;guid=79faac9816006d9498ce65ba2ce48ce8&amp;type=3#Events" />
+    <ui:DropdownField label="Simulation" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="simulationSelectionDropDown" />
+    <ui:DropdownField label="Commodity" index="-1" choices="System.Collections.Generic.List`1[System.String]" tooltip="Name of Commodity to affect" name="commodityDropDownField" />
+    <ui:IntegerField label="Inflation Rate Change" value="0" tooltip="Positive values add to the inflation rate of the commodity, negative values reduce the inflation rate" name="inflationShiftIntegerField" />
+    <ui:IntegerField label="Supply Change" value="0" name="supplyShiftIntegerField" tooltip="Positive values add to the supply of the commodity, negative values reduce the supply" style="align-items: flex-start; justify-content: flex-start;" />
+    <ui:IntegerField label="Demand Change" value="0" name="demandShiftIntegerField" tooltip="Positive values add to the demand of the commodity, negative values reduce the demand" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+    <ui:IntegerField label="Need Level Change" value="0" tooltip="Positive values add to the need level of the commodity, negative values reduce the need level" name="needShiftIntegerField" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;" />
+    <ui:IntegerField label="Moving Average&#10;Duration Shift" value="0" tooltip="Positive values add to the moving average duration of the commodity, negative values reduce the moving average duration" name="movingAvgDurationShiftIntegerField" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;" />
+    <ui:Label tabindex="-1" text="Event Piece OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="eventPieceStatusLabel" style="align-self: center;" />
+    <ui:Button text="Add Event Piece" parse-escape-sequences="true" display-tooltip-when-elided="true" name="addEventPieceButton" />
+    <ui:ScrollView name="eventPieceScrollView" style="height: -52px;" />
+    <ui:DropdownField label="Event Piece to Delete" index="-1" choices="System.Collections.Generic.List`1[System.String]" tooltip="Index (1-n) of Event Piece in above list to delete" name="eventPieceDeletionDropDownField" />
+    <ui:Button text="Delete Event Piece" parse-escape-sequences="true" display-tooltip-when-elided="true" name="deleteEventPieceButton" />
+    <ui:Button text="Run Event" parse-escape-sequences="true" display-tooltip-when-elided="true" name="runEventButton" />
+    <ui:Button text="Save Event" parse-escape-sequences="true" display-tooltip-when-elided="true" name="saveEventButton" />
+    <ui:Label tabindex="-1" text="Changes Saved" parse-escape-sequences="true" display-tooltip-when-elided="true" name="saveStateLabel" style="align-items: auto; justify-content: flex-start; align-self: center;" />
+    <ui:Button text="Clear Event" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clearEventButton" />
+</ui:UXML>

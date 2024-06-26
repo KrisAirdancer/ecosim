@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/EcoSim/Editor/Configuration-Tools/VisualizationMenu/VisualizationMenu.uss?fileID=7433441132597879392&amp;guid=3f4be047a699f2d43984cf080e77d4ee&amp;type=3#VisualizationMenu" />
+    <ui:DropdownField label="Simulation" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="simulationSelectionDropDown" />
+    <ui:VisualElement name="main" style="flex-grow: 1; flex-direction: column; justify-content: space-between;">
+        <ui:VisualElement name="itemsList" style="flex-grow: 1;" />
+        <ui:VisualElement name="graphGroup" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; height: 300px; min-height: 300px;">
+            <ui:VisualElement name="graphControls" style="flex-grow: 1; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; align-items: flex-start; margin-bottom: 10px;">
+                <ui:VisualElement name="supplyRow" style="flex-grow: 1; align-items: flex-start; flex-direction: row;">
+                    <ui:Toggle name="supplyToggle" value="true" class="toggle" />
+                    <uie:ColorField label="Supply Color" value="#648FFFFF" name="supplyColorPicker" class="colorLabel" style="max-width: 175px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="demandRow" style="flex-grow: 1; flex-direction: row; align-items: flex-start;">
+                    <ui:Toggle name="demandToggle" value="true" class="toggle" />
+                    <uie:ColorField label="Demand Color" value="#DC267FFF" name="demandColorPicker" class="colorLabel" style="max-width: 175px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="hmpRow" style="flex-grow: 1; align-items: flex-start; flex-direction: row;">
+                    <ui:Toggle name="hmpToggle" class="toggle" />
+                    <uie:ColorField label="HMP Color" value="#FFB000FF" name="hmpColorPicker" class="colorLabel" style="max-width: 175px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <GraphElement name="itemDataGraph" style="flex-grow: 1; height: 250px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

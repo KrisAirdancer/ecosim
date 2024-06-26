@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:TextField picking-mode="Ignore" label="New Simulation Name" name="newSimulationNameTextField" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;" />
+    <ui:Label tabindex="-1" text="Simulation names are unique and not null" parse-escape-sequences="true" display-tooltip-when-elided="true" name="createSimInfoLabel" style="-unity-text-align: middle-center; text-overflow: clip; white-space: normal; font-size: 12px;" />
+    <ui:Button text="Create Simulation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="createSimulationButton" />
+    <ui:DropdownField label="Simulation" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="simulationSelectionDropDown" tooltip="What simulation to delete" />
+    <ui:Button text="Delete Selected Simulation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="deleteSimulationButton" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Simulation Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="simulationSettingsLabel" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-left; margin-bottom: 4px; margin-left: 4px; padding-top: 6px; border-left-color: rgba(255, 8, 8, 0); border-right-color: rgba(255, 8, 8, 0); border-top-color: rgba(255, 8, 8, 0); border-bottom-color: rgba(255, 8, 8, 0); text-overflow: clip;" />
+        <ui:SliderInt name="timeStep" label="Simulation tick rate (ms): " value="1000" high-value="10000" tooltip="The delay between the end of this trading round and the start of the next trading round" low-value="100" show-input-field="true" style="-unity-font-style: normal; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; background-color: rgba(255, 1, 1, 0);" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:TextField name="exportField" picking-mode="Ignore" label="Path to&#10;Scritpable Object &#10;Directory" value="$" tooltip="The symbol used to denote the currency" style="justify-content: space-between; align-items: center; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exportButton" />
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exportResult" style="white-space: normal;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Currency Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="currencySettingsLabel" style="-unity-font-style: bold; white-space: nowrap; -unity-text-align: middle-left; margin-bottom: 4px; margin-left: 4px; padding-top: 6px; font-size: 13px;" />
+        <ui:TextField name="currencyName" picking-mode="Ignore" label="Name" value="US Dollar" tooltip="The name of currency  used" style="align-items: center; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+        <ui:TextField name="currencyUnit" picking-mode="Ignore" label="Units" value="dollar" tooltip="The measurement unit for the currency" style="justify-content: space-around; align-items: center; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:TextField name="currencySymbol" picking-mode="Ignore" label="Symbol" value="$" tooltip="The symbol used to denote the currency" style="justify-content: space-between; align-items: center; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:Toggle label="Export data?" name="exportDataToggle" tooltip="Toggle whether data from the simulation(s) should be expoerted" value="false" />
+        <ui:Button name="saveEngineConfig" text="Save settings" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Save current settings" />
+        <ui:Toggle label="All Data" tooltip="Report all data that is generated" name="exportAllDataToggle" value="true" style="visibility: hidden;" />
+        <ui:Toggle label="Price" name="exportPriceToggle" tooltip="Export the price of each commodity" style="visibility: hidden;" />
+        <ui:Toggle label="Supply" name="exportSupplyToggle" tooltip="Export the supply of each commodity" style="visibility: hidden;" />
+        <ui:Toggle label="Demand" name="exportDemandToggle" tooltip="Export the demand of each commodity" style="visibility: hidden;" />
+        <ui:Toggle label="Average Price History" name="exportAverageHistoryToggle" tooltip="Export the number of rounds information about each commodity is remembered for" style="visibility: hidden;" />
+        <ui:IntegerField label="Starting Round:" value="0" name="exportMinRoundIntField" tooltip="The round that data begins to be exported from" style="visibility: hidden; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:IntegerField label="Ending Round" value="-1" name="exportMaxRoundIntField" tooltip="The final round that data is exported. -1 indicates all rounds until the simulation ends" style="visibility: hidden; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;" />
+        <ui:Toggle label="All Commodities" name="exportAllCommoditiesToggle" value="true" tooltip="Export all commodities or select commodities" style="visibility: hidden;" />
+        <ui:DropdownField label="Dropdown" index="0" choices="System.Collections.Generic.List`1[System.String]" name="exportCommodityDropDown" tooltip="Select a commodity to add to the export list" style="visibility: hidden;" />
+        <ui:Button text="Add Commodity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="addExportCommodityButton" style="visibility: hidden;" />
+        <ui:Button text="Remove Commodity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="removeExportCommodityButton" style="visibility: hidden;" />
+        <ui:Button text="Remove all commodities" parse-escape-sequences="true" display-tooltip-when-elided="true" name="removeAllExportCommoditiesButton" style="visibility: hidden;" />
+        <ui:ScrollView name="exportCommoditiesScrollView" />
+    </ui:VisualElement>
+</ui:UXML>

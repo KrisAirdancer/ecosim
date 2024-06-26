@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Tests/EcoEngineTests.cs.meta
+guid: 86dee91e8f25aa34686526ff07bb614a
+========
+guid: 1c1b1b48c5937474ab98c027971078d5
+>>>>>>>> 6b254afe822e182e6b2219eaa48c396c61591e34:Assets/EcoSim/Runtime/Simulation/Global.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

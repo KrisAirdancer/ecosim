@@ -1,0 +1,14 @@
+{
+  "timeStep": "1000",
+  "currencyName": "US Dollar",
+  "currencyUnit": "dollar",
+  "currencySymbol": "$",
+  "export": "0",
+  "exportPrice": "0",
+  "exportSupply": "0",
+  "exportDemand": "0",
+  "exportAvgHistory": "0",
+  "exportMinRound": "0",
+  "exportMaxRound": "0",
+  "exportAllCommodities": "0"
+}
